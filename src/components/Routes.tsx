@@ -20,7 +20,6 @@ export const PATH = {
 
 function Routes() {
     return (
-        <div>
             <Switch>
                 <Route path={"/"} exact render={() => <Redirect to={PATH.Test}/>}/>
                 <Route path={PATH.Login} render={() => <Login/>}/>
@@ -31,8 +30,7 @@ function Routes() {
                 <Route path={PATH.Test} render={() => <Test/>}/>
                 <Route render={() => <Error404/>}/>
             </Switch>
-        </div>
-    );
+    )
 }
 
 export default Routes
